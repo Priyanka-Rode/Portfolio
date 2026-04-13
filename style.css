@@ -74,13 +74,13 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   font-size: 14px;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: white;
+  color: var(--body-text);
 }
 
 /* Hero */
@@ -146,9 +146,10 @@ nav a:hover {
 .tag {
   padding: 10px 15px;
   border-radius: 20px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--surface-alt);
+  border: 1px solid var(--surface-alt-strong);
   font-size: 14px;
+  color: var(--text-secondary);
 }
 
 /* Buttons */
@@ -239,7 +240,7 @@ nav a:hover {
 /* Icon */
 .skills-icon {
   font-size: 22px;
-  background: rgba(255,255,255,0.05);
+  background: var(--surface-alt);
   padding: 12px;
   border-radius: 12px;
   display: inline-block;
@@ -264,18 +265,18 @@ nav a:hover {
 }
 
 .skills-tags span {
-  background: rgba(255,255,255,0.05);
+  background: var(--surface-alt);
   padding: 6px 12px;
   border-radius: 15px;
   font-size: 12px;
-  color: #cbd5e1;
+  color: var(--text-secondary);
 }
 
 /* Section */
 .skills-section {
   padding: 120px 60px;
   text-align: center;
-  background: #020617;
+  background: var(--panel-bg);
 }
 
 /* Title */
@@ -302,8 +303,8 @@ nav a:hover {
 
 /* Card */
 .card {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--surface-alt);
+  border: 1px solid var(--surface-alt-strong);
   padding: 30px;
   border-radius: 20px;
   width: 260px;
@@ -327,7 +328,7 @@ nav a:hover {
 /* Icon */
 .icon {
   font-size: 24px;
-  background: rgba(255,255,255,0.05);
+  background: var(--surface-alt);
   padding: 12px;
   border-radius: 10px;
   display: inline-block;
@@ -351,10 +352,11 @@ nav a:hover {
 }
 
 .tags span {
-  background: rgba(255,255,255,0.05);
+  background: var(--surface-alt);
   padding: 6px 12px;
   border-radius: 15px;
   font-size: 12px;
+  color: var(--text-secondary);
 }
 
 /* SECTION */
@@ -391,7 +393,7 @@ nav a:hover {
   position: absolute;
   width: 2px;
   height: 100%;
-  background: #2a3a5f;
+  background: var(--surface-alt-strong);
   left: 50%;
   transform: translateX(-50%);
 }
