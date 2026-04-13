@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Priyanka Portfolio</title>
+  <title>Priyanka Rode Portfolio</title>
   <link rel="stylesheet" href="style.css">
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
   <h2 class="logo">PR.</h2>
   <nav>
@@ -21,30 +22,31 @@
   </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-
-  <div class="badge">AVAILABLE FOR OPPORTUNITIES</div>
 
   <h1>Priyanka Rode</h1>
 
   <p>
-    Creative and curious <span>Full Stack Java Developer</span> with a blend of 
-    design thinking and technical skills. Passionate about building 
-    practical and meaningful solutions.
+    Motivated and detail-oriented <span>Full Stack Java Developer</span> with strong expertise in 
+    Java, Spring Boot, and REST API development. Passionate about building scalable applications 
+    and solving real-world problems using clean and efficient code.
   </p>
 
   <div class="tags">
-    <div class="tag">💻 Developer</div>
-    <div class="tag">📊 Analytical Thinker</div>
+    <div class="tag">💻 Full Stack Developer</div>
+    <div class="tag">⚙️ Backend Specialist</div>
     <div class="tag">🚀 Problem Solver</div>
   </div>
 
   <div class="buttons">
-    <button class="btn-primary">Hire Me →</button>
-    <button class="btn-secondary">⬇ Download Resume</button>
+    <button class="btn-primary" onclick="scrollToContact()">Hire Me →</button>
+    <button class="btn-secondary" onclick="downloadResume()">⬇ Download Resume</button>
   </div>
 
 </section>
+
+<!-- SKILLS -->
 <section id="skills" class="skills-section">
 
   <h2 class="section-title">Core Competencies</h2>
@@ -54,49 +56,50 @@
 
     <div class="skills-card">
       <div class="skills-icon">💻</div>
-      <h3>Technical Skills</h3>
+      <h3>Programming</h3>
       <div class="skills-tags">
         <span>Java</span>
-        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
       </div>
     </div>
 
-    <div class="skills-card active">
-      <div class="skills-icon blue">🛠</div>
+    <div class="skills-card">
+      <div class="skills-icon">🛠</div>
+      <h3>Frameworks & Backend</h3>
+      <div class="skills-tags">
+        <span>Spring Boot</span>
+        <span>Spring MVC</span>
+        <span>Hibernate</span>
+        <span>Microservices</span>
+      </div>
+    </div>
+
+    <div class="skills-card">
+      <div class="skills-icon">🗄</div>
+      <h3>Database</h3>
+      <div class="skills-tags">
+        <span>MySQL</span>
+      </div>
+    </div>
+
+    <div class="skills-card">
+      <div class="skills-icon">⚡</div>
       <h3>Tools</h3>
       <div class="skills-tags">
-        <span>Canva</span>
-        <span>MS Excel</span>
-        <span>Power BI</span>
-        <span>Tableau</span>
-      </div>
-    </div>
-
-    <div class="skills-card">
-      <div class="skills-icon">👥</div>
-      <h3>Soft Skills</h3>
-      <div class="skills-tags">
-        <span>Creativity</span>
-        <span>Problem Solving</span>
-        <span>Adaptability</span>
-        <span>Time Management</span>
-        <span>Teamwork</span>
-      </div>
-    </div>
-
-    <div class="skills-card">
-      <div class="skills-icon">🌐</div>
-      <h3>Languages</h3>
-      <div class="skills-tags">
-        <span>English</span>
-        <span>Hindi</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Postman</span>
       </div>
     </div>
 
   </div>
 </section>
+
+<!-- EXPERIENCE -->
 <section id="experience" class="section">
-  <h1>Professional Journey</h1>
+  <h1>Professional Experience</h1>
   <div class="underline"></div>
 
   <div class="timeline">
@@ -104,19 +107,23 @@
     <div class="dot"></div>
 
     <div class="card">
-      <div class="date">APRIL 2025 - NOVEMBER 2025</div>
+      <div class="date">Dec 2024 – May 2025</div>
       <h3>Jr. Software Engineer Intern</h3>
-      <div class="company">Your Company Name</div>
+      <div class="company">Cravita Technologies India Pvt Ltd</div>
 
       <ul>
-        <li>Developed REST APIs using Java & Spring Boot.</li>
-        <li>Tested APIs using Postman and fixed bugs.</li>
-        <li>Worked with SQL database and optimized queries.</li>
+        <li>Engineered 5+ RESTful APIs using Java & Spring Boot.</li>
+        <li>Executed 20+ API test cases using Postman with 100% accuracy.</li>
+        <li>Optimized backend logic to improve API performance.</li>
+        <li>Resolved 10+ critical bugs enhancing system reliability.</li>
+        <li>Implemented validation & exception handling for secure APIs.</li>
       </ul>
     </div>
 
   </div>
 </section>
+
+<!-- PROJECTS -->
 <section id="projects" class="projects-section">
 
   <h2 class="section-title">Featured Projects</h2>
@@ -124,149 +131,140 @@
 
   <div class="projects-container">
 
-    <!-- Project 1 -->
     <div class="project-card">
-      <div class="project-tag">👁 SECURITY</div>
-      <h3>Real-Time Weapon Detection System</h3>
+      <div class="project-tag">🏠 WEB APP</div>
+      <h3>Real Estate Management System</h3>
       <p>
-        Developed a basic AI system to detect weapons using YOLOv8 and Python.
-        Features live camera input processing and automated alert notifications.
+        Built a full-stack application to manage property listings, buyers, and brokers 
+        with secure authentication and scalable architecture.
       </p>
-
       <div class="tech-tags">
-        <span>YOLOv8</span>
-        <span>Python</span>
-        <span>Computer Vision</span>
-        <span>Alerting</span>
+        <span>Spring Boot</span>
+        <span>Java</span>
+        <span>MySQL</span>
       </div>
     </div>
 
-    <!-- Project 2 -->
-    <div class="project-card highlight">
-      <div class="project-tag">🛡 PERSONAL SAFETY</div>
-      <h3>Smart Women’s Safety Device</h3>
-      <p>
-        Built an IoT-based safety device using ESP32, LoRa, GPS, and GSM module.
-        Sends real-time emergency alerts with exact location details.
-      </p>
-
-      <div class="tech-tags">
-        <span>ESP32</span>
-        <span>LoRa</span>
-        <span>IoT</span>
-        <span>Embedded Systems</span>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
     <div class="project-card">
-      <div class="project-tag">❤️ HEALTH CARE</div>
-      <h3>Personal Health and Fitness Assistant</h3>
+      <div class="project-tag">📱 TELECOM</div>
+      <h3>DU Clone (Self-Care Portal)</h3>
       <p>
-        Created a mobile application providing personalized workout routines
-        and health tips. Built with Flutter and FastAPI backend.
+        Developed a telecom self-care platform similar to MyJio with recharge, billing, 
+        and real-time usage tracking.
       </p>
-
       <div class="tech-tags">
-        <span>Flutter</span>
-        <span>Python</span>
-        <span>FastAPI</span>
-        <span>HealthTech</span>
+        <span>Spring Boot</span>
+        <span>REST API</span>
+        <span>MySQL</span>
       </div>
     </div>
+
+    <div class="project-card">
+  <div class="project-tag">🤖 AI + DATABASE</div>
+  <h3>Natural Language to SQL App</h3>
+  <p>
+    Built an intelligent application that converts plain English queries into SQL 
+    and executes them on a database. Enables non-technical users to retrieve data 
+    using natural language with real-time results displayed in the UI.
+  </p>
+
+  <div class="tech-tags">
+    <span>Java</span>
+    <span>NLP</span>
+    <span>SQL</span>
+    <span>REST API</span>
+  </div>
+</div>
 
   </div>
 
 </section>
+
+<!-- EDUCATION -->
 <section id="education" class="education-section">
 
-  <h2 class="section-title">Academic Background</h2>
+  <h2 class="section-title">Education</h2>
   <div class="underline"></div>
 
   <div class="education-container">
 
-    <!-- Card 1 -->
     <div class="edu-card">
       <div class="edu-top">
-        <div class="edu-icon">🎓</div>
-        <div class="edu-badge">CGPA: 7.3</div>
+        <div class="edu-icon blue">🎓</div>
+        <div class="edu-badge">Grade: A</div>
       </div>
 
-      <h3>B.Tech – Artificial Intelligence & Data Science</h3>
-      <p>Kongunadu College of Engineering and Technology, Trichy</p>
-
+      <h3>M.Sc Computer Science</h3>
+      <p>College of Computer Science, Pune</p>
       <div class="edu-footer">
-        <span>3rd Year</span>
+        <span>2024 – 2025</span>
       </div>
     </div>
 
-    <!-- Card 2 -->
-    <div class="edu-card highlight">
+    <div class="edu-card">
       <div class="edu-top">
         <div class="edu-icon blue">🎓</div>
-        <div class="edu-badge">77%</div>
+        <div class="edu-badge">Grade: A</div>
       </div>
 
-      <h3>Higher Secondary Education</h3>
-      <p>Sri Vidya Mandir Matriculation Higher Secondary School, Rasipuram</p>
-
+      <h3>B.Sc Computer Science</h3>
+      <p>Vidya Pratishthan College, Baramati</p>
       <div class="edu-footer">
-        <span>2023</span>
+        <span>2019 – 2022</span>
       </div>
     </div>
 
   </div>
 
 </section>
+
+<!-- CONTACT -->
 <section id="contact" class="contact-section">
   <div class="container">
+
     <h1 class="contact-title">
-      Let's connect and build something <span>incredible</span><br>together.
+      Let's build something <span>amazing</span> together 🚀
     </h1>
 
     <p class="contact-subtitle">
-      I'm currently seeking opportunities to apply my AI and Data Science skills
-      to real-world challenges. Feel free to reach out for collaborations or just a
-      friendly chat about tech!
+      Open to Full Stack Developer roles. Feel free to connect!
     </p>
 
     <div class="contact-cards">
-      
-      <!-- Email -->
-      <div class="contact-card">
-        <div class="contact-icon">✉️</div>
-        <p class="contact-label">EMAIL ME</p>
-        <h3>tharaneeshj@gmail.com</h3>
-        <button onclick="sendEmail()">Send Message ➤</button>
-      </div>
 
-      <!-- LinkedIn -->
-      <div class="contact-card">
-        <div class="contact-icon">in</div>
-        <p class="contact-label">NETWORK</p>
-        <h3>LinkedIn Profile</h3>
-        <button onclick="openLinkedIn()">View Profile</button>
-      </div>
+      <a href="mailto:rodepriyanka099@gmail.com" class="contact-card contact-link" aria-label="Send email">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4.4-8 5-8-5V6l8 5 8-5v2.4Z"/></svg>
+        </div>
+        <h3>rodepriyanka099@gmail.com</h3>
+      </a>
 
-      <!-- GitHub -->
-      <div class="contact-card">
-        <div class="contact-icon">🐱</div>
-        <p class="contact-label">SOURCE CODE</p>
-        <h3>GitHub Profile</h3>
-        <button onclick="openGithub()">View Projects</button>
-      </div>
+      <a href="https://www.linkedin.com/in/priyankarode" target="_blank" rel="noreferrer noopener" class="contact-card contact-link" aria-label="Open LinkedIn profile">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.6 4.1 5.5 3 5.5 1.9 5.5 1 4.6 1 3.5S1.9 1.5 3 1.5c1.1 0 1.98.9 1.98 2zm.02 4.5H1V23h4V8zm7.5 0h-3.9V23h3.9v-7.8c0-4.1 5.3-4.4 5.3 0V23h4V14.1c0-7.4-8.1-7.1-9.3-3.5V8z"/></svg>
+        </div>
+        <h3>linkedin.com/in/priyankarode</h3>
+      </a>
 
-      <!-- Phone -->
-      <div class="contact-card">
-        <div class="contact-icon">📞</div>
-        <p class="contact-label">CALL ME</p>
-        <h3>+91 73959 36932</h3>
-        <button onclick="callNow()">Call Now</button>
-      </div>
+      <a href="https://github.com/Priyanka-Rode" target="_blank" rel="noreferrer noopener" class="contact-card contact-link" aria-label="Open GitHub profile">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.84.5 12.4c0 5.17 3.34 9.56 7.97 11.11.58.1.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.24.7-3.92-1.6-3.92-1.6-.53-1.36-1.3-1.72-1.3-1.72-1.06-.74.08-.72.08-.72 1.17.08 1.79 1.22 1.79 1.22 1.04 1.8 2.73 1.28 3.4.98.11-.76.4-1.28.72-1.57-2.59-.3-5.31-1.33-5.31-5.93 0-1.31.47-2.39 1.23-3.23-.12-.3-.53-1.52.12-3.17 0 0 1.01-.33 3.3 1.23.96-.27 1.98-.4 3-.4 1.02 0 2.04.14 3 .4 2.29-1.56 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.23 0 4.61-2.73 5.62-5.33 5.92.41.36.77 1.08.77 2.18 0 1.58-.01 2.86-.01 3.25 0 .31.21.67.8.56C20.66 21.96 24 17.57 24 12.4 24 5.84 18.35.5 12 .5Z"/></svg>
+        </div>
+        <h3>github.com/Priyanka-Rode</h3>
+      </a>
+
+      <a href="tel:+918080318067" class="contact-card contact-link" aria-label="Call phone number">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.05-.24 11.36 11.36 0 0 0 3.55.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.55 1 1 0 0 1-.24 1.05l-2.2 2.2Z"/></svg>
+        </div>
+        <h3>+91 8080318067</h3>
+      </a>
 
     </div>
   </div>
 </section>
+
+<script src="script.js"></script>
 
 </body>
 </html>

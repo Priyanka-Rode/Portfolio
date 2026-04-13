@@ -7,11 +7,19 @@ document.querySelectorAll("nav a").forEach(link => {
   });
 });
 
+// Toggle blue/pink accent when PR logo is clicked
+const logo = document.querySelector('.logo');
+if (logo) {
+  logo.addEventListener('click', () => {
+    document.body.classList.toggle('pink-mode');
+  });
+}
+
 // Timeline dot animation
 window.addEventListener("scroll", () => {
   const dot = document.querySelector(".dot");
   let offset = window.scrollY * 0.3;
-  dot.style.top = 120 + offset + "px";
+  dot.style.top = -220 + offset + "px";
 });
 
 function sendEmail() {
@@ -24,6 +32,15 @@ function openLinkedIn() {
 
 function openGithub() {
   window.open("https://github.com", "_blank");
+}
+
+function downloadResume() {
+  const link = document.createElement('a');
+  link.href = 'PriyankaRode_Resume.pdf';
+  link.download = 'PriyankaRode_Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
 
 function callNow() {
